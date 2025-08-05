@@ -10,7 +10,7 @@ import '../config.js'
 export async function before(m, { conn, text }) {	
 global.key = ''
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? this.user.jid : m.sender
-let pp = await this.profilePictureUrl(who, 'image').catch(_ => "https://i.ibb.co/xqFc0dvP/Menu2.jpg")
+let pp = await this.profilePictureUrl(who, 'image').catch(_ => "https://qu.ax/FxPEO.jpg")
 
 // Fake
 global.fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
@@ -51,7 +51,7 @@ global.redesMenu = [all, canal1, canal2, canal3, canal4, md, ig, paypal, yt, asi
 global.accountsgb = [all, canal1, canal2, canal3, canal4, tk, ig, yt, paypal, fb, ths, md, asistencia][Math.floor(Math.random() * 13)]
 global.cuentas = [grupo1, grupo2, grupo_collab1, grupo_collab2, grupo_collab3, grupo_collab4][Math.floor(Math.random() * 6)]
 
-global.canalIdGB = ["120363400536272752@newsletter"]
+global.canalIdGB = ["120363372881159257@newsletter"]
 global.canalNombreGB = ["CANAL OFICIAL🤖"]
 global.channelRD = await getRandomChannel()
 
@@ -70,7 +70,7 @@ global.imagen11 = fs.readFileSync("./Menu2.jpg")
 global.imagen12 = fs.readFileSync("./Menu2.jpg")
 global.imagen13 = fs.readFileSync("./Menu2.jpg")
 
-global.img = 'https://i.ibb.co/xqFc0dvP/Menu2.jpg'
+global.img = 'https://qu.ax/FxPEO.jpg'
 global.img2 = img //'https://qu.ax/ZJKqt.jpg' 
 
 global.img3 = img //'https://qu.ax/ZJKqt.jpg'  //prem
@@ -96,7 +96,7 @@ global.img18 = img //'https://qu.ax/ZJKqt.jpg'
 
 global.logogit = img //'https://qu.ax/ZJKqt.jpg' 
 
-global.gataVidMenu = ['https://i.ibb.co/xqFc0dvP/Menu2.jpg', 'https://i.ibb.co/xqFc0dvP/Menu2.jpg', 'https://i.ibb.co/xqFc0dvP/Menu2.jpg'][Math.floor(Math.random() * 3)]
+global.gataVidMenu = ['https://qu.ax/FxPEO.jpg', 'https://qu.ax/FxPEO.jpg', 'https://qu.ax/FxPEO.jpg'][Math.floor(Math.random() * 3)]
 global.gataMenu = [img, img2, img6, img7, img8, img9, img13, img14, img15, img17, img18][Math.floor(Math.random() * 11)]
 global.gataImg = [imagen1, imagen2, imagen3, imagen4, imagen5, imagen6, imagen7, imagen8, imagen9, imagen10, imagen11, imagen12, imagen13][Math.floor(Math.random() * 13)]
 
